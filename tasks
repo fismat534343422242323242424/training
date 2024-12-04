@@ -1,0 +1,16 @@
+# задача №1
+import numpy as np
+
+# Коэффициенты при переменных
+A = np.array([[1, 2], 
+              [3, -1]])
+
+# Свободные члены
+B = np.array([10, 5])
+
+# Решение системы уравнений
+solution = np.linalg.solve(A, B)
+
+x, y = solution
+print(f"Решение: x = {x}, y = {y}")
+
