@@ -1,0 +1,14 @@
+import numpy as np
+from scipy.optimize import fsolve
+
+# Определяем функцию, представляющую наше уравнение
+def equation(x):
+    return 2*x**2 - 4*x + 1
+
+# Начальные приближения для поиска корней
+initial_guesses = [0, 3]
+
+# Нахождение корней
+roots = fsolve(equation, initial_guesses)
+
+print(f"Корни уравнения: {roots}")
